@@ -1,0 +1,17 @@
+<div class="container mt-5">
+  <h2 class="mt-4 mb-3">Products in Electronics Category</h2>
+      <div class="row">
+          <div class="col-md-4 mb-4" *ngFor="let product of products">
+              <a [routerLink]="['/main-layout/products', product.id]" class="card custom-card shadow-sm text-decoration-none">
+                  <img [src]="product.image" class="card-img-top" alt="{{ product.title }}">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ product.title }}</h5>
+                      <p class="card-text">{{ product.description | slice:0:100 }}...</p>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Price: <strong>${{ product.price }}</strong>
+                  </div>
+              </a>
+          </div>
+      </div> 
+</div>

@@ -1,0 +1,215 @@
+/* Global styles for headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Arial, sans-serif';
+  margin: 0;
+  color: #673ab7;
+}
+
+/* Global styles for titles */
+h1 {
+  font-size: 2.5rem; /* Customize as needed */
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: semi-bold;
+  margin-bottom: 0.75rem;
+}
+
+/* Global styles for lists */
+ul, ol {
+  padding-left: 20px; /* Adjust padding for lists */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Space between list items */
+}
+
+/* Global styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Merge borders */
+  margin-bottom: 1.5rem; /* Space below the table */
+}
+
+th, td {
+  padding: 12px; /* Padding for cells */
+  text-align: left; /* Align text to the left */
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+th {
+  background-color: #f2f2f2; /* Light gray background for headers */
+  font-weight: bold; /* Bold text for headers */
+}
+
+/* Additional styles */
+a {
+  color: gray; /* Link color */
+  text-decoration: none; /* No underline */
+}
+
+a:hover {
+  color:#673ab7; /* Underline on hover */
+}
+/* Global styles for buttons */
+button {
+  background-color: #673ab7; /* Bootstrap primary color */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ae95cd; /* Darker shade for hover effect */
+ 
+}
+
+/* Global styles for forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #673ab7; /* Highlight border on focus */
+}
+
+/* Global styles for cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 1.5rem;
+}
+
+/* Global styles for alerts */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  color: #155724;
+}
+
+.alert-error {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+/* Utility classes for spacing */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+/* Global styles for badges */
+.badge {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-size: 0.875rem;
+}
+
+/* Global styles for progress bars */
+.progress {
+  width: 100%;
+  background-color: #f3f3f3;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+}
+
+/* Global styles for navigation */
+.navbar {
+  background-color: #333; /* Dark background */
+  color: white;
+  padding: 1rem;
+}
+
+/* Global styles for modals */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Global styles for tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the text */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background-color: #eef2f6; }
+
+
+
+.image{
+position: absolute;
+top:9%;
+right: 9%;
+left: 53%;
+} 

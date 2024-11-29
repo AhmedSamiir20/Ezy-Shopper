@@ -1,0 +1,44 @@
+.main-content {
+    margin-top: 5%; /* Adjust this value based on your navbar height */
+    margin-bottom: 5%; /* Adjust this value based on your navbar height */
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1; /* Pushes the footer to the bottom */
+  }
+  
+
+  html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1; /* This makes sure content takes the remaining space */
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+

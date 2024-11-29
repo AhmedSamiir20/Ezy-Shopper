@@ -1,0 +1,69 @@
+<div class="container mt-5">
+    <h2 class="mb-4 text-center">Checkout</h2>
+    <form #checkoutForm="ngForm" (ngSubmit)="onSubmit(checkoutForm)" class="p-4 border rounded shadow-sm bg-light">
+      <!-- Name -->
+      <div class="form-group mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input 
+          type="text" 
+          id="name" 
+          class="form-control" 
+          placeholder="Enter your full name" 
+          required 
+          [(ngModel)]="order.name" 
+          name="name">
+      </div>
+  
+      <!-- Address -->
+      <div class="form-group mb-3">
+        <label for="address" class="form-label">Address</label>
+        <textarea 
+          id="address" 
+          class="form-control" 
+          placeholder="Enter your delivery address" 
+          rows="3" 
+          required 
+          [(ngModel)]="order.address" 
+          name="address"></textarea>
+      </div>
+  
+      <!-- Payment -->
+      <div class="form-group mb-4">
+        <label for="payment" class="form-label">Payment Method</label>
+        <select 
+          id="payment" 
+          class="form-select" 
+          required 
+          [(ngModel)]="order.paymentMethod" 
+          name="paymentMethod">
+          <option value="" disabled selected>Select a payment method</option>
+          <option value="credit">Credit Card</option>
+          <option value="paypal">PayPal</option>
+          <option value="cod">Cash on Delivery</option>
+        </select>
+      </div>
+  
+      <!-- Order Summary -->
+      <div class="mb-4">
+        <h5>Order Summary</h5>
+        <ul class="list-group">
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Item Name</span>
+            <span>$20.00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Shipping</span>
+            <span>$5.00</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between fw-bold">
+            <span>Total</span>
+            <span>$25.00</span>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-success btn-lg w-100">Place Order</button>
+    </form>
+  </div>
+  

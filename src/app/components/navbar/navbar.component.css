@@ -1,0 +1,126 @@
+@media (max-width: 991px) {
+    .navbar-scroll {
+      background-color: #fff;
+    }
+       
+    .navbar-scroll .navbar-brand,
+    .navbar-scroll .nav-link,
+    .navbar-scroll .fa-bars {
+      color: #4f4f4f !important;
+    }         
+  }
+  
+  .navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: #4f4f4f;
+  }
+  
+  .navbar-scroll {
+    box-shadow: none;
+  }
+  
+  .navbar-scrolled {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+  }
+  
+  .navbar-scrolled .navbar-brand,
+  .navbar-scrolled .nav-link,
+  .navbar-scrolled .fa-bars {
+    color: #4f4f4f;
+  }
+  
+  .navbar-scrolled {
+    background-color: #fff;
+  }
+  
+  @media (max-width: 450px) {
+    #intro {
+      height: 950px !important;
+    }
+  }
+  
+  @media (min-width: 550px) and (max-width: 750px) {
+    #intro {
+      height: 1100px !important;
+    }
+  }
+  
+  @media (min-width: 800px) and (max-width: 990px) {
+    #intro {
+      height: 600px !important;
+    }
+  }
+  
+  .display-1 {
+    font-weight: 500 !important;
+    letter-spacing: 40px;
+  }
+  
+  @media (min-width: 1600px) {
+    .display-1 {
+      font-size: 10rem;
+    }
+  }
+
+  .search-box {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-box input {
+    border: 1px solid #027b9a;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    box-shadow: #027b9a;
+  }
+  
+  .search-box i {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .search-box input:focus {
+    border-color: #027b9a;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  }
+  
+
+    .navbar-scroll {
+      background-color: #f8f9fa; /* Light background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+
+    .nav-item .dropdown-menu {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .dropdown-item {
+      color: #333;
+      padding: 10px 15px;
+      transition: background-color 0.2s ease-in-out;
+    }
+    
+    .dropdown-item:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+    .nav-item.dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* Align with the navbar */
+  }

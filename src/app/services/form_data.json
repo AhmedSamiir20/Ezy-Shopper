@@ -1,0 +1,21 @@
+ {
+  "forms": [
+    {
+      "id": 1,
+      "name": "Form 1",
+      "fields": [
+        { "type": "text", "label": "First Name" },
+        { "type": "email", "label": "Email" },
+        { "type": "password", "label": "Password" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Form 2",
+      "fields": [
+        { "type": "number", "label": "Age" },
+        { "type": "date", "label": "Date of Birth" }
+      ]
+    }
+  ]
+}

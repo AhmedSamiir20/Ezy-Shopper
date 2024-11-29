@@ -1,0 +1,229 @@
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #eee !important;
+  }
+  
+  /* Typography */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #222;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+   
+  /* Layout */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Grid System */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding: 15px;
+    flex: 0 0 auto;
+  }
+  
+  .col-12 { width: 100%; }
+  .col-11 { width: 91.66667%; }
+  .col-10 { width: 83.33333%; }
+  .col-9 { width: 75%; }
+  .col-8 { width: 66.66667%; }
+  .col-7 { width: 58.33333%; }
+  .col-6 { width: 50%; }
+  .col-5 { width: 41.66667%; }
+  .col-4 { width: 33.33333%; }
+  .col-3 { width: 25%; }
+  .col-2 { width: 16.66667%; }
+  .col-1 { width: 8.33333%; }
+  
+  /* Buttons */
+  button, .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Forms */
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #007BFF;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-1 { margin-top: 1rem; }
+  .mt-2 { margin-top: 2rem; }
+  
+  .mb-1 { margin-bottom: 1rem; }
+  .mb-2 { margin-bottom: 2rem; }
+  
+  .p-1 { padding: 1rem; }
+  .p-2 { padding: 2rem; }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+      width: 100%;
+    }
+  }
+  
+  /* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  td {
+    color: #333;
+  }
+  
+  .table-striped tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #ddd;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  .table-responsive table {
+    width: 100%;
+  }
+  
+  /* Table Utility Classes */
+  .table-sm th, .table-sm td {
+    padding: 8px;
+  }
+  
+  /* Card Styles */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #fff;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-footer {
+  background-color: #f7f7f7;
+  padding: 10px 15px;
+  border-top: 1px solid #ddd;
+  text-align: right;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card .btn {
+  margin-top: 15px;
+}
+
+/* Responsive Cards */
+.card-columns {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .card-columns {
+    column-count: 1;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

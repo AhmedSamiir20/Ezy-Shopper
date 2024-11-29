@@ -1,0 +1,51 @@
+/* CSS Styles */
+.custom-card {
+    transition: transform 0.2s;
+    width: 100%; /* Ensures full width */
+    height: 100%; /* Fixed height for uniformity */
+    overflow: hidden; /* Prevents overflow of content */
+    border-radius: 15px;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 300px; /* Fixed height for uniformity */
+    object-fit: scale-down; /* Keeps aspect ratio */
+    width: 100%; /* Ensures full width */
+}
+
+.list-group-item {
+    font-size: 1.1rem; /* Larger font size for better readability */
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Light hover effect */
+}
+
+.text-muted {
+    font-weight: 500; /* Slightly bold for visibility */
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; /* Custom shadow */
+}
+
+/* Grid Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.col-md-4 {
+    flex: 0 0 25%; /* 4 items per row */
+    max-width: 25%; /* 4 items per row */
+}
+
+.card-body {
+    padding: 0px; /* Consistent padding for card body */
+}
