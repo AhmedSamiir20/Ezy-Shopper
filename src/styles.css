@@ -1,28 +1,31 @@
+
+
+
 html, body {
     height: 100%;
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #eee !important;
   }
-  
+
   /* Typography */
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     font-weight: 600;
     color: #222;
   }
-  
+
   p {
     margin-bottom: 1rem;
     line-height: 1.6;
   }
-  
+
   a {
     text-decoration: none;
     color: #007BFF;
   }
-  
-   
+
+
   /* Layout */
   .container {
     width: 100%;
@@ -30,19 +33,19 @@ html, body {
     margin: 0 auto;
     padding: 0 15px;
   }
-  
+
   /* Grid System */
   .row {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  
+
   .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
     padding: 15px;
     flex: 0 0 auto;
   }
-  
+
   .col-12 { width: 100%; }
   .col-11 { width: 91.66667%; }
   .col-10 { width: 83.33333%; }
@@ -55,7 +58,7 @@ html, body {
   .col-3 { width: 25%; }
   .col-2 { width: 16.66667%; }
   .col-1 { width: 8.33333%; }
-  
+
   /* Buttons */
   button, .btn {
     display: inline-block;
@@ -67,19 +70,19 @@ html, body {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   button:hover, .btn:hover {
     background-color: #0056b3;
   }
-  
+
   .btn-secondary {
     background-color: #6c757d;
   }
-  
+
   .btn-secondary:hover {
     background-color: #5a6268;
   }
-  
+
   /* Forms */
   input, textarea, select {
     width: 100%;
@@ -89,81 +92,81 @@ html, body {
     border-radius: 5px;
     font-size: 1rem;
   }
-  
+
   input:focus, textarea:focus, select:focus {
     outline: none;
     border-color: #007BFF;
   }
-  
+
   /* Utility Classes */
   .text-center {
     text-align: center;
   }
-  
+
   .mt-1 { margin-top: 1rem; }
   .mt-2 { margin-top: 2rem; }
-  
+
   .mb-1 { margin-bottom: 1rem; }
   .mb-2 { margin-bottom: 2rem; }
-  
+
   .p-1 { padding: 1rem; }
   .p-2 { padding: 2rem; }
-  
+
   /* Responsive */
   @media (max-width: 768px) {
     .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
       width: 100%;
     }
   }
-  
+
   /* Table Styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1.5rem;
   }
-  
+
   th, td {
     padding: 12px 15px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
-  
+
   th {
     background-color: #007BFF;
     color: white;
     font-weight: bold;
   }
-  
+
   tr:hover {
     background-color: #f1f1f1;
   }
-  
+
   td {
     color: #333;
   }
-  
+
   .table-striped tr:nth-child(even) {
     background-color: #f9f9f9;
   }
-  
+
   .table-bordered th, .table-bordered td {
     border: 1px solid #ddd;
   }
-  
+
   .table-responsive {
     overflow-x: auto;
   }
-  
+
   .table-responsive table {
     width: 100%;
   }
-  
+
   /* Table Utility Classes */
   .table-sm th, .table-sm td {
     padding: 8px;
   }
-  
+
   /* Card Styles */
 .card {
   border: 1px solid #ddd;

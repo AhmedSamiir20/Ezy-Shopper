@@ -6,6 +6,7 @@ import { CartService } from '../../services/cart.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ToastrService } from 'ngx-toastr';
 
 export interface Iproducts {
   productId: string;
@@ -24,7 +25,7 @@ export interface IAddProduct {
   standalone: true,
   imports: [CommonModule, RouterModule, MatProgressSpinnerModule, FormsModule],
   templateUrl: './product-details.component.html',
-  styleUrls: ['./product-details.component.css']
+  styleUrls: ['./product-details.component.css'],
 })
 export class ProductDetailsComponent implements OnInit {
   product!: Product;
@@ -38,7 +39,8 @@ export class ProductDetailsComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
-    private cartService: CartService
+    private cartService: CartService,
+    private toaster: ToastrService
   ) {}
 
   ngOnInit(): void {
@@ -55,9 +57,10 @@ export class ProductDetailsComponent implements OnInit {
           this.loadingProduct = false;
         },
         error: () => {
-          this.errorMessage = 'Error loading product details. Please try again later.';
+          this.errorMessage =
+            'Error loading product details. Please try again later.';
           this.loadingProduct = false;
-        }
+        },
       });
     }
   }
@@ -69,9 +72,10 @@ export class ProductDetailsComponent implements OnInit {
         this.loadingRelated = false;
       },
       error: () => {
-        this.errorMessage = 'Error loading related products. Please try again later.';
+        this.errorMessage =
+          'Error loading related products. Please try again later.';
         this.loadingRelated = false;
-      }
+      },
     });
   }
 
@@ -94,28 +98,33 @@ export class ProductDetailsComponent implements OnInit {
         id: '',
         userId: '2', // Example userId, replace with actual user info
         date: new Date().toLocaleDateString(),
-        products: [{
-          productId: product.id,
-          quantity: this.quantity
-        }]
+        products: [
+          {
+            productId: product.id,
+            quantity: this.quantity,
+          },
+        ],
       };
     }
 
     // Update the quantity dynamically
     this.addProduct.products[0].quantity = this.quantity;
 
-    console.log("Add to cart is ", this.addProduct);
+    console.log('Add to cart is ', this.addProduct);
 
     // Call service to add product to cart
     this.productService.addProductToCart(this.addProduct).subscribe({
       next: (res) => {
-        console.log("Response is ", res);
+        this.toaster.success('Add to cart Succcessfully');
+        console.log('Response is ', res);
         // Optionally reset quantity after adding to cart
         this.quantity = 1;
       },
       error: (err) => {
-        this.errorMessage = 'Error adding product to cart. Please try again later.';
-      }
+        this.errorMessage =
+          'Error adding product to cart. Please try again later.';
+        this.toaster.error(this.errorMessage);
+      },
     });
   }
 }
